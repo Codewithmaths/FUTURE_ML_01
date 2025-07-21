@@ -35,14 +35,14 @@ Whether you're a data scientist, analyst, or business user, this solution empowe
 ## 📁 Project Structure
 
 sales-forecasting-dashboard/
-├── data/
-│ └── powerbi_sales_forecast_data.csv # Sample sales data
-├── notebooks/
-│ └── sale_forecasting_model.ipynb # XGBoost model and forecasting logic
-├── dashboard/
-│ └── sales_dashboard.pbix # Power BI dashboard file
-├── requirements.txt # Python libraries needed
-├── README.md # Project documentation
+├── data/<br>
+│ └── powerbi_sales_forecast_data.csv # Sample sales data<br>
+├── notebooks/<br>
+│ └── sale_forecasting_model.ipynb # XGBoost model and forecasting logic<br>
+├── dashboard/<br>
+│ └── sales_dashboard.pbix # Power BI dashboard file<br>
+├── requirements.txt # Python libraries needed<br>
+├── README.md # Project documentation<br>
 
 yaml
 Copy
@@ -74,37 +74,25 @@ Add your CSV file to the data/ folder and name it powerbi_sales_forecast_data.cs
 
 🧠 Forecasting with Python (XGBoost)
 Open notebooks/sale_forecasting_model.ipynb.
-
 Follow the notebook steps:
-
 Load and clean the sales data
-
 Engineer features (e.g., lag values, rolling means)
-
 Train the XGBoost forecasting model
-
 Export results to CSV for use in Power BI
 
 📈 Power BI Dashboard
 Open dashboard/sales_dashboard.pbix in Power BI Desktop.
-
 Ensure the data source path matches your local setup (modify if needed).
 
 Explore:
-
 📉 Trend lines (actual vs forecast)
-
 📆 Month-over-month & year-over-year comparisons
-
 🔍 High/low performance periods
-
 🎯 KPI cards and category breakdowns
 
 🛠️ Customization
 Tweak Power BI visuals or filters for your own business logic.
-
 Modify or re-train the XGBoost model with additional data or hyperparameters.
-
 Extend Python code with new features (e.g., holidays, promotions, weather impact).
 🤝 Contributing
 We welcome contributions!
@@ -113,8 +101,9 @@ Please open an issue first to discuss major changes. Bug fixes, feature suggesti
 This project is licensed under the MIT License — feel free to use, modify, and share.
 📬 Contact
 Have questions or feedback?
-Reach out via [Your Email or Contact Info].
+Reach out via singh507manav@gmail.com.
 ⭐ Star this repo if you find it useful and help others discover it!
+
 yaml
 Copy
 Edit
