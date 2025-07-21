@@ -1,35 +1,20 @@
 Sales Forecasting & Analytics Dashboard
 Date: July 21, 2025
-Author: [Your Name or Organization]
-
+Author: Manav Singh
 Overview
-This project provides an end-to-end solution for sales data analysis and forecasting using Python and Power BI. It guides non-technical business users and analysts through:
+This project provides an end-to-end workflow for sales forecasting and analysis, using Python for machine learning and Power BI for interactive business dashboards.
+It is designed for users of all skill levels to visualize sales trends, perform comparisons, and extract actionable insights.
 
-Forecasting sales using Python (XGBoost)
-
-Preparing and cleaning data for business reporting
-
-Building an interactive Power BI dashboard to visualize:
-
-Sales trends (actual vs. forecast)
-
-Monthly & yearly comparisons
-
-Top & low-performing periods
-
-Key business metrics (KPIs)
-
-Filterable breakdowns (when available)
-
-Features
-Machine Learning Forecast: Uses XGBoost for predictive sales modeling .
-
-Interactive Dashboard: Built in Power BI for business exploration.
-
-Clear Documentation: Step-by-step guides and code are included.
-
-Structured Data Flow: From raw CSV through preprocessing to visualization.
-
+Tech Stack
+Technology	Purpose
+Power BI Desktop	Data visualization and dashboard building (trend lines, comparisons, KPIs, filtering)
+Python 3.8+	Data preprocessing, feature engineering, machine learning modeling
+Jupyter Notebook / VS Code	Developing and running Python code and notebooks
+Pandas	Data manipulation, cleaning, aggregation for analysis and forecasting
+Numpy	Numeric operations and calculations needed for feature engineering
+XGBoost	Machine learning (gradient boosting) for sales forecasting
+Matplotlib	Visualization of results in Python (exploratory/analytical charts)
+CSV	Data storage and exchange format (Power BI <-> Python)
 Repository Structure
 text
 ├── data/
@@ -42,56 +27,33 @@ text
 ├── README.md                                    # Project documentation
 Getting Started
 Prerequisites
-Power BI Desktop
-
-Python 3.8+ (for forecasting, if desired)
-
-See requirements.txt for Python package dependencies (pandas, numpy, xgboost, matplotlib, etc.) 
-
+Install Power BI Desktop
+Install Python 3.8+ and required libraries (see requirements.txt)
+(Recommended) Jupyter Notebook or VS Code for executing Python scripts
 Data
-Place your sales data as data/powerbi_sales_forecast_data.csv.
-This data should include columns: Date, Sales, Category, Region, Store, etc.
-
-How to Run Forecasting
-Open notebooks/sale_forecasting_model.ipynb in Jupyter or VS Code.
-
-Follow all notebook steps to:
-
-Prepare features
-
-Train the model (XGBoost)
-
-Generate forecasted sales
-
-Export results for use in Power BI
-
-How to Use the Power BI Dashboard
-Open dashboard/sales_dashboard.pbix with Power BI Desktop.
-
-Update the data source if needed to point to your CSV or updated forecast file.
-
-Explore the built-in visuals:
-
-Sales trend lines (showing forecast vs. actual)
-
-Filters by year, category, etc.
-
-Monthly & yearly comparison charts
-
-Insight cards for decision-making
-
+Put the sales data file in the data/ directory as powerbi_sales_forecast_data.csv.
+It should contain at least: Date, Sales, Category, Region, Store, etc.
+Forecasting with Python
+Open notebooks/sale_forecasting_model.ipynb
+Run the cells as instructed:
+Load and clean data
+Create lag/rolling features
+Train XGBoost model
+Save forecast results for Power BI
+Power BI Dashboard
+Open dashboard/sales_dashboard.pbix in Power BI Desktop.
+Make sure data source paths match your environment.
+Use built-in filters and visuals:
+Trend lines (actual vs. forecast)
+Month/year comparison
+High/low periods
+KPI/summary cards
 Customization
-If your data includes more detailed fields (e.g., product-level info), update the dashboard’s visuals accordingly.
-
-Adjust forecast model parameters in the Python notebook as needed for improved accuracy.
-
+Adjust visuals and calculations in Power BI for your business context.
+Re-train or tweak the Python model for improved forecasts as needed.
 Contributing
-Pull requests and feature suggestions are welcome. Please open an issue to discuss changes before contributing.
-
+Contributions are welcome. Please open an issue first to discuss your ideas.
 License
-MIT License or specify your own.
-
+MIT License (or specify your own).
 Contact
-For support or collaboration, contact [Your Email/Contact Page].
-
-Note: This project is for educational and demonstration purposes. Please adapt it to your organization’s data structure and privacy policies.
+For help or suggestions, contact singh507manav@gmail.com.
